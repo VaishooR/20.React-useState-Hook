@@ -1,0 +1,18 @@
+import * as React from 'react';
+import './style.css';
+import {useState} from 'react';
+
+export default function App() {
+  const[text,settext]=useState('');
+  const handleinput=(e)=>{
+    settext(e.target.value)
+  }
+  
+  return (
+    <div>
+       <input type="text" onChange={handleinput}/><br/>
+       {text}
+    </div>
+  );
+}
+
