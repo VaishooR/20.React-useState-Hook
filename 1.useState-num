@@ -1,0 +1,33 @@
+import * as React from 'react';
+import './style.css';
+import {useState} from 'react';
+
+export default function App() {
+  const[num,setnum]=useState(0)
+  const increment=()=>{
+    setnum(num+1)
+  }
+  return (
+    <div>
+      {num}
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
+}
+
+
+
+
+// export default function App() {
+//   let num=0;
+//   const increment=()=>{
+//     num=num+1;
+//     console.log(num)
+//   }
+//   return (
+//     <div>
+//       {num}
+//       <button onClick={increment}>Increment</button>
+//     </div>
+//   );
+// }
